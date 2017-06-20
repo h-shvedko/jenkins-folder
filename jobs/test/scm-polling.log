@@ -1,0 +1,9 @@
+Started on Jun 20, 2017 12:33:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 155d60680d2fd7de5102ffa5f8691d48267dd794 (refs/remotes/origin/master)
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h https://github.com/h-shvedko/phpquickformPHP7.git # timeout=10
+Found 1 remote heads on https://github.com/h-shvedko/phpquickformPHP7.git
+[poll] Latest remote head revision on refs/heads/master is: 155d60680d2fd7de5102ffa5f8691d48267dd794 - already built by 4
+Done. Took 0.74 sec
+No changes

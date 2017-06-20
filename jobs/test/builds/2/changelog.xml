@@ -1,0 +1,11 @@
+commit 999a77137e7a3d2ccbd2bb716e745399b6c27cb0
+tree 2cecd10d4a67d4aca1fb56ef33063b819409a891
+parent 8f3f633182bd3a98d15eee64561b25ffa8d560fa
+author h-shvedko <hennadii.shvedko@copernicus.org> 2017-06-20 13:37:37 +0200
+committer h-shvedko <hennadii.shvedko@copernicus.org> 2017-06-20 13:37:37 +0200
+
+    ADDED: folder build/logs for Jenkins
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	build/logs/composer.json

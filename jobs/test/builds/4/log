@@ -1,0 +1,79 @@
+Started by user [8mha:////4I7Rs/IxM0/SuROYZsgFLw0udYrFra85Iny+v/lvb3OiAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/dLi1CL9jNS8vMSUzEy94oyy1JTsfAAyLrvrywAAAA==[0mHennadii Shvedko
+ln -s builds/lastSuccessfulBuild /var/jenkins_home/jobs/test/lastSuccessful failed: 71 Protocol error
+ln -s builds/lastStableBuild /var/jenkins_home/jobs/test/lastStable failed: 71 Protocol error
+Building in workspace /var/jenkins_home/workspace/test
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/h-shvedko/phpquickformPHP7.git # timeout=10
+Fetching upstream changes from https://github.com/h-shvedko/phpquickformPHP7.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/h-shvedko/phpquickformPHP7.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 155d60680d2fd7de5102ffa5f8691d48267dd794 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 155d60680d2fd7de5102ffa5f8691d48267dd794
+ > git rev-list 155d60680d2fd7de5102ffa5f8691d48267dd794 # timeout=10
+ERROR: Unable to find build script at /var/jenkins_home/workspace/test/build.xml
+[8mha:////4PZhMXGV3MHgAuyRIpNOw+FgfpZaZeOzg3PPZiHW1pRpAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0m[WARNINGS] Parsing warnings in console log with parser PHP Runtime
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Searching for all files in /var/jenkins_home/workspace/test that match the pattern build/logs/checkstyle.xml
+[CHECKSTYLE] Parsing 1 file in /var/jenkins_home/workspace/test
+[CHECKSTYLE] Skipping file  of module /var/jenkins_home/workspace/test/build/logs/checkstyle.xml because it's empty.
+[PMD] Collecting PMD analysis files...
+[PMD] Searching for all files in /var/jenkins_home/workspace/test that match the pattern build/logs/pmd.xml
+[PMD] Parsing 1 file in /var/jenkins_home/workspace/test
+[PMD] Skipping file  of module /var/jenkins_home/workspace/test/build/logs/pmd.xml because it's empty.
+[DRY] Collecting duplicate code analysis files...
+[DRY] Searching for all files in /var/jenkins_home/workspace/test that match the pattern build/logs/pmd-cpd.xml
+[DRY] Parsing 1 file in /var/jenkins_home/workspace/test
+[DRY] Skipping file  of module /var/jenkins_home/workspace/test/build/logs/pmd-cpd.xml because it's empty.
+Recording plot data
+Publishing Clover coverage report...
+Clover xml file does not exist in: /var/jenkins_home/workspace/test called: build/logs/clover.xml and will not be copied to: /var/jenkins_home/jobs/test/builds/4/cloverphp/clover.xml
+Could not find 'build/coverage/build/logs/clover.xml'.  Did you generate the XML report for Clover?
+[CRAP4J] Collecting Crap4J analysis files...
+[CRAP4J] Searching for report files within build/logs/crap4j.xml
+[CRAP4J] Using the new FileSetBuilder
+[CRAP4J] No crap4j report files were found. Configuration error?
+Build step 'Report Crap' marked build as failure
+[htmlpublisher] Archiving HTML reports...
+[htmlpublisher] Archiving at BUILD level /var/jenkins_home/workspace/test/build/api to /var/jenkins_home/jobs/test/builds/4/htmlreports/API_Documentation
+ERROR: Specified HTML directory '/var/jenkins_home/workspace/test/build/api' does not exist.
+[8mha:////4PZhMXGV3MHgAuyRIpNOw+FgfpZaZeOzg3PPZiHW1pRpAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0m[xUnit] [INFO] - Starting to record.
+[xUnit] [INFO] - Processing PHPUnit-3.x (default)
+[xUnit] [INFO] - [PHPUnit-3.x (default)] - No test report file(s) were found with the pattern 'build/logs/junit.xml' relative to '/var/jenkins_home/workspace/test' for the testing framework 'PHPUnit-3.x (default)'.  Did you enter a pattern relative to the correct directory?  Did you generate the result report(s) for 'PHPUnit-3.x (default)'?
+[xUnit] [ERROR] - No test reports found for the metric 'PHPUnit' with the resolved pattern 'build/logs/junit.xml'. Configuration error?.
+[xUnit] [INFO] - Failing BUILD.
+[xUnit] [INFO] - There are errors when processing test results.
+[xUnit] [INFO] - Skipping tests recording.
+[xUnit] [INFO] - Stop build.
+[JDepend] JDepend plugin is ready
+[JDepend] Couldn't generate JDepend file at 'build/logs/jdepend.xml'org.xml.sax.SAXParseException; systemId: file:/tmp/jdepend6439972312565894019.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+ERROR: Step ‘Report Violations’ aborted due to exception: 
+[8mha:////4PZhMXGV3MHgAuyRIpNOw+FgfpZaZeOzg3PPZiHW1pRpAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mjava.io.EOFException: input contained no data
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:3003)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.parseProlog(MXParser.java:1410)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1395)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at hudson.plugins.violations.parse.AbstractParser.expectNextTag(AbstractParser.java:262)
+	at hudson.plugins.violations.types.checkstyle.CheckstyleParser.execute(CheckstyleParser.java:39)
+	at hudson.plugins.violations.parse.AbstractTypeParser.parse(AbstractTypeParser.java:57)
+	at hudson.plugins.violations.ViolationsCollector.doType(ViolationsCollector.java:187)
+	at hudson.plugins.violations.ViolationsCollector.invoke(ViolationsCollector.java:114)
+	at hudson.plugins.violations.ViolationsCollector.invoke(ViolationsCollector.java:25)
+	at hudson.FilePath.act(FilePath.java:996)
+	at hudson.FilePath.act(FilePath.java:974)
+	at hudson.plugins.violations.ViolationsPublisher.perform(ViolationsPublisher.java:74)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:779)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:720)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:665)
+	at hudson.model.Run.execute(Run.java:1753)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:405)
+Finished: FAILURE
